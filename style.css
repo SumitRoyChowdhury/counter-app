@@ -1,0 +1,90 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    width: 40vw;
+    height: 60vh;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.display-box{
+    width: 30vw;
+    height: 20vh;
+    /* border: 1px solid black; */
+    grid-column: 2/-2;
+    grid-row: 1/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-title{
+    font-size: 3vw;
+    line-height: 0;
+}
+.val{
+    font-size: 6vw;
+    font-weight: bold;
+}
+.decrement-btn{
+    width: 8vw;
+    height: 8vw;
+    background-color: #ff3d31;
+    border-radius: 50%;
+    grid-column: 3/5;
+    grid-row: 5/9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vw;
+    line-height: 0;
+    color: white;
+}
+.increment-btn{
+    width: 8vw;
+    height: 8vw;
+    background-color: #35c759;
+    border-radius: 50%;
+    grid-column: 5/7;
+    grid-row: 5/9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vw;
+    line-height: 0;
+    color: white;
+}
+.reset-btn{
+    width: 6vw;
+    height: 5vh;
+    align-self: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1885ff;
+    color: white;
+    grid-column: 4/6;
+    grid-row: -4/-2;
+    border-radius: 5%;
+    font-size: 1.5vw;
+}
+.decrement-btn:hover{
+    cursor: pointer;
+    border: 4px solid black;
+}
+.increment-btn:hover{
+    cursor: pointer;
+    border: 4px solid black;
+}
+.reset-btn:hover{
+    cursor: pointer;
+    border: 4px solid black;
+}
